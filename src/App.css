@@ -1,38 +1,74 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input {
+  font-size: medium;
+  background-color: rgb(253, 253, 140);
+  height: 40px;
+  width: 250px;
+  margin-top: 30px;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.notes {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  text-align: left;
+  font-family: serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.note-form {
+  margin-bottom: 20px;
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+  background-color: rgb(253, 253, 151);
+  width: 150px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  word-wrap: break-word;
+}
+
+.note-text {
+  font-size: 16px;
+  flex-grow: 1;
+  font-family: monospace;
+}
+
+.note-date {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.button1 {
+  background-color: black;
   color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-family: sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: darkred;
 }
